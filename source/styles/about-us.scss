@@ -1,0 +1,205 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 120px;
+    }
+
+    @media screen and (max-width: 700px) {
+        margin-top: 100px;
+    }
+}
+
+.about-us__wrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 138px;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: 100px;
+    
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 80px;
+        }
+
+        @media screen and (max-width: 700px) {
+            margin: 0;
+        }
+    }
+
+    &:last-of-type {
+        @media screen and (max-width: 1024px) {
+            display: flex;
+        }
+    }
+}
+
+.about-us__title {
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 700px) {
+        margin-bottom: 40px;
+    }
+}
+
+.about-us__subtitle {
+    color: #31334d;
+
+    @media screen and (max-width: 700px) {
+        margin-bottom: 40px;
+    }
+}
+
+.about-us__subtitle--first {
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 59.66px;
+    }
+}
+
+.about-us__subtitle--second {
+    @media screen and (max-width: 1024px) {
+        margin-right: 53px;
+    }
+}
+
+.about-us__img {
+    @media screen and (max-width: 1024px) {
+        width: 355px;
+        height: 70.5px;
+    }
+}
+
+.about-us__list {   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 77px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @media screen and (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+}
+
+.about-us__item {
+    @media screen and (max-width: 700px) {
+        display: flex;
+    }
+
+    &:not(:last-of-type) {
+        @media screen and (max-width: 700px) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.about-us__wrapper {
+    @media screen and (max-width: 700px) {
+        width: 59px;
+        text-align: center;
+        margin-right: 26px;
+    }
+}
+
+.about-us__caption {
+    font-weight: 750;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 700px) {
+        width: 59px;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0;
+    }
+}
+
+.about-us__text {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.about-us__list--rating {
+    .about-us__text {
+        @media screen and (max-width: 700px) {
+            padding: 0;
+            padding-left: 85px;
+        }
+    }
+}
+
+.about-us__text--participation,
+.about-us__text--point,
+.about-us__text--position {
+    padding-top: 75px;
+}
+
+.about-us__text--participation::before {
+    content: "";
+    position: absolute;
+    width: 56.49px;
+    height: 50px;
+    background-image: url("../images/triangle-dots.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 700px) {
+        width: 50px;
+        height: 44.26px;
+        top: -3px;
+    }
+}
+
+.about-us__text--point::before {
+    content: "";
+    position: absolute;
+    width: 61.98px;
+    height: 75px;
+    background-image: url("../images/icon-cup.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 700px) {
+        width: 50px;
+        height: 60.5px;
+        top: -20px;
+    }
+}
+
+.about-us__text--position::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/icon-bitrix.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 700px) {
+        width: 50px;
+        height: 50px;
+        top: -10px;
+    }
+}

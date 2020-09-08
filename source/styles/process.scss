@@ -1,0 +1,128 @@
+.process {
+    margin-top: 149.59px;
+    margin-bottom: 150px;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    @media screen and (max-width: 700px) {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+
+.process__text {
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 700px) {
+        width: 214px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+.process-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.process-list__item {
+    width: 25%;
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+.process-list__item:not(:last-of-type) {
+    @media screen and (max-width: 1024px) {
+        margin-right: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+}
+
+.process-list__svg {
+    position: absolute;
+    top: 35px;
+    left: 105px;
+
+    @media screen and (max-width: 1024px) {
+        width: 75px;
+        height: 10px;
+        left: 95px;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.process-list__wrap {
+    @media screen and (max-width: 1024px) {
+        margin-left: 20px;
+    }
+}
+
+.process-list__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #2550DA;
+    background-color: #AEC5FF;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1024px) {
+        min-width: 72px;
+        height: 72px;
+        margin: 0;
+    }
+}
+
+.process-list__subtitle {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 700px) {
+        margin-bottom: 5px;
+    }
+}
+
+.process-list__text {
+    padding: 0;
+    margin: 0;
+
+    @media screen and (max-width: 700px) {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

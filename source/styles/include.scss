@@ -1,0 +1,320 @@
+.include {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 156px;
+        background-image: url("../images/dots.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        bottom: -140px;
+        right: 52px;
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+}
+
+.include .container {
+    @media screen and (max-width: 700px) {
+        padding: 0;
+    }
+}
+
+.include__title {
+    color: #3B3D52;
+    margin-top: 100px;
+
+    @media screen and (max-width: 700px) {
+        margin-top: 191px;
+        margin-left: 20px;
+    }
+}
+
+.include__wrap {
+    margin-top: 60px;
+    padding: 40px 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 700px) {
+        padding: 40px 21px;
+        margin-top: 40px;
+    }
+}
+
+.include__wrapper{ 
+    &:nth-last-of-type(2) {
+        border-top: 1px solid #BCBCBC;
+        border-bottom: 1px solid #BCBCBC;
+        padding-top: 40px;
+        padding-bottom: 25px;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 700px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.include__subtitle {
+    font-weight: 600;
+    color: #3B3D52;
+}
+
+.include__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.include__item {
+    position: relative;
+    text-align: center;
+}
+
+.include__list--set {
+    margin-top: 40px;
+
+    @media screen and (max-width: 1024px) {
+        justify-content: center;
+    }
+}
+
+.include__list--set .include__item {
+    width: 14%;
+    padding-top: 70px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1024px) {
+        width: 25%;
+    }
+
+    @media screen and (max-width: 700px) {
+        width: 50%;
+    }
+}
+
+.include__item--design::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 49px;
+    background-image: url("../images/icon-figma.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 45%;
+}
+
+.include__item--responsive::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 45.2px;
+    background-image: url("../images/icon-devices.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 40%;
+}
+
+.include__item--animation::before {
+    content: "";
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    background-image: url("../images/icon-ae.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 38%;
+}
+
+.include__item--uikit::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-image: url("../images/icon-ui.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 35%;
+
+    @media screen and (max-width: 1024px) {
+        left: 40%;
+    }
+}
+
+.include__item--supervision::before {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 53px;
+    background-image: url("../images/icon-superviser.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 40%;
+}
+
+.include__item--supervision {
+    @media screen and (max-width: 1024px) {
+        order: 2;
+    }
+}
+
+.include__item--presentation::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 54px;
+    background-image: url("../images/icon-presentation.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 43%;
+}
+
+.include__item--supervision {
+    @media screen and (max-width: 1024px) {
+        order: 1;
+    }
+}
+
+.include__item--guides::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 54px;
+    background-image: url("../images/icon-html.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 43%;
+}
+
+.include__item--guides {
+    @media screen and (max-width: 1024px) {
+        order: 5;
+    }
+}
+
+.include__list--style {
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    .include__item {
+        position: relative;
+        width: 33.33%;
+        text-align: left;
+        padding-left: 17px;
+        padding-right: 17px;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: 1024px) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 700px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .include__item::before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background-color: #2550DA;
+        border-radius: 50%;
+        top: 8px;
+        left: 0;
+    }
+}
+
+.include__text {
+    padding: 0;
+    margin: 0;
+    color: #000000;
+}
+
+.include__box {
+    display: flex;
+    align-items: flex-end;
+}
+
+.include__currency {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.include__currency--grey {
+    color: rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
+}
+
+.include__price {
+    font-size: 36px;
+    line-height: 44px;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.include__price--old {
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: line-through;
+}
+
+.include__box--order {
+    align-items: center;
+    margin-top: 20px;
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+    }
+
+    .include__text {
+        padding: 0;
+        margin: 0;
+        margin-left: 20px;
+        color: rgba(0, 0, 0, 0.5);
+
+        @media screen and (max-width: 700px) {
+            margin: 0;
+        }
+    }
+}
+
+.include__button {
+    width: 210px;
+    color: #fff;
+    background-color: #2550DA;
+
+    @media screen and (max-width: 700px) {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
