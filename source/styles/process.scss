@@ -81,17 +81,17 @@
 }
 
 .process-list__wrap {
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 767px) {
         margin-left: 20px;
     }
 }
 
 .process-list__number {
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
@@ -101,8 +101,11 @@
     margin-bottom: 20px;
 
     @media screen and (max-width: 1024px) {
-        min-width: 72px;
+        width: 72px;
         height: 72px;
+    }
+
+    @media screen and (max-width: 700px) {
         margin: 0;
     }
 }

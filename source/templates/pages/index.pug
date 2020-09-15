@@ -15,7 +15,7 @@ block content
                     li.presentation__item Продуктовый подход
                 
                 .presentation__box
-                    button(type="button").presentation__button.button Получить скидку
+                    button(type="button").presentation__button.button.popup-contact-us Получить скидку
                     span.presentation__info Скидка 30% при заполнении брифа
 
                 ul.presentation__social-list.social-list
@@ -89,55 +89,72 @@ block content
                                 span.include__price.include__price--old 315 000
                                 |руб.
                         .include__box.include__box--order
-                            button(type="button").include__button.button Заказать дизайн
+                            button(type="button").include__button.button.popup-contact-us Заказать дизайн
                             p.include__text Со скидкой 30% при заполнении брифа
 
         section.types
-            .container
+            .types__container.container
                 h2.types__title.title Типы проектов
 
                 ul.types__list.types-list
                     li.types-list__item
-                        a.types-list__link(href="#") Лендинг
+                        a.types-list__link(href="#landing") Лендинг
                     li.types-list__item
-                        a.types-list__link.types-list__link--active(href="#") Корпоративный сайт
+                        a.types-list__link.active(href="#corporate-site") Корпоративный сайт
                     li.types-list__item
-                        a.types-list__link(href="#") Интернет-магазин
+                        a.types-list__link(href="#online-store") Интернет-магазин
                     li.types-list__item
-                        a.types-list__link(href="#") Сервис
+                        a.types-list__link(href="#service") Сервис
 
-                .types__group
-                    .types__item.visually-hidden
-                        h2.types__caption 01
-                        p.types__text Качественный корпоративный сайт формирует имидж компании и призван производить хорошее первое впечатление на посетителей. Такие сайты отличаются чёткой структурой представления больших объёмов информации и ориентированы на бизнес-партнёров.
+                .types__group.types-group
+                    .types-group__item#landing
+                        .types-group__wrap
+                            h2.types-group__caption 01
+                            p.types-group__text Качественный корпоративный сайт формирует имидж компании и призван производить хорошее первое впечатление на посетителей. Такие сайты отличаются чёткой структурой представления больших объёмов информации и ориентированы на бизнес-партнёров.
 
-                        img(src="app/images/Rectangle45.jpg" width="592" height="430" alt="Пример корпоративного сайта").types__image
+                            img(src="app/images/Rectangle45.jpg" width="592" height="430" alt="Пример корпоративного сайта").types-group__image
 
-                    .types__item
-                        h2.types__caption 02
-                        p.types__text Качественный корпоративный сайт формирует имидж компании и призван производить хорошее первое впечатление на посетителей. Такие сайты отличаются чёткой структурой представления больших объёмов информации и ориентированы на бизнес-партнёров.
+                            .types__box.types-box
+                                span.types-box__text ITProgress
+                                a(href="#" aria-label="Лендинг").types-box__link Подробнее о кейсе
 
-                        img(src="app/images/Rectangle45.jpg" width="592" height="430" alt="Пример корпоративного сайта").types__image
+                    .types-group__item.active#corporate-site
+                        .types-group__wrap
+                            h2.types-group__caption 02
+                            p.types-group__text Качественный корпоративный сайт формирует имидж компании и призван производить хорошее первое впечатление на посетителей. Такие сайты отличаются чёткой структурой представления больших объёмов информации и ориентированы на бизнес-партнёров.
 
-                    .types__item.visually-hidden
-                        h2.types__caption 03
-                        p.types__text Качественный корпоративный сайт формирует имидж компании и призван производить хорошее первое впечатление на посетителей. Такие сайты отличаются чёткой структурой представления больших объёмов информации и ориентированы на бизнес-партнёров.
+                            img(src="app/images/Rectangle45.jpg" width="592" height="430" alt="Пример корпоративного сайта").types-group__image
 
-                        img(src="app/images/Rectangle45.jpg" width="592" height="430" alt="Пример корпоративного сайта").types__image
+                            .types__box.types-box
+                                span.types-box__text ITProgress
+                                a(href="#" aria-label="Корпоративный сайт").types-box__link Подробнее о кейсе
 
-                    .types__item.visually-hidden
-                        h2.types__caption 04
-                        p.types__text Качественный корпоративный сайт формирует имидж компании и призван производить хорошее первое впечатление на посетителей. Такие сайты отличаются чёткой структурой представления больших объёмов информации и ориентированы на бизнес-партнёров.
+                    .types-group__item#online-store
+                        .types-group__wrap
+                            h2.types-group__caption 03
+                            p.types-group__text Качественный корпоративный сайт формирует имидж компании и призван производить хорошее первое впечатление на посетителей. Такие сайты отличаются чёткой структурой представления больших объёмов информации и ориентированы на бизнес-партнёров.
 
-                        img(src="app/images/Rectangle45.jpg" width="592" height="430" alt="Пример корпоративного сайта").types__image
+                            img(src="app/images/Rectangle45.jpg" width="592" height="430" alt="Пример корпоративного сайта").types-group__image
 
-                    .types__box.types-box
-                        span.types-box__text ITProgress
-                        a(href="#").types-box__link Подробнее о кейсе
+                            .types__box.types-box
+                                span.types-box__text ITProgress
+                                a(href="#" aria-label="Интернет-магазин").types-box__link Подробнее о кейсе
+
+                    .types-group__item#service
+                        .types-group__wrap
+                            h2.types-group__caption 04
+                            p.types-group__text Качественный корпоративный сайт формирует имидж компании и призван производить хорошее первое впечатление на посетителей. Такие сайты отличаются чёткой структурой представления больших объёмов информации и ориентированы на бизнес-партнёров.
+
+                            img(src="app/images/Rectangle45.jpg" width="592" height="430" alt="Пример корпоративного сайта").types-group__image
+
+                            .types__box.types-box
+                                span.types-box__text ITProgress
+                                a(href="#" aria-label="Сервис").types-box__link Подробнее о кейсе
+
 
         section.portfolio
             .container
-                h2.portfolio__title.title Наши проекты
+                h2.portfolio__title.title#projects Наши проекты
                 .portfolio__filter-wrap.filter-wrap
                     label.filter-wrap__label
                         input.filter-wrap__input.visually-hidden(type="checkbox")
@@ -186,23 +203,28 @@ block content
                     h2.responsive__title.title Адаптивность<br> на всех устройствах
                     p.responsive__text Для удобства пользования<br> при любых обстоятельствах
 
-                img(src="app/images/laptop.jpg" width="530" height="412.8" alt="Адаптивность на всех устройствах").responsive__image
+                .responsive__image-wrap
+                    img(src="app/images/laptop.png" width="470" height="270" alt="Адаптивность на всех устройствах").responsive__image#desktop
+                    img(src="app/images/laptop.png" width="470" height="270" alt="Адаптивность на всех устройствах").responsive__image#notebook.active
+                    img(src="app/images/laptop.png" width="470" height="270" alt="Адаптивность на всех устройствах").responsive__image#tablet
+                    img(src="app/images/laptop.png" width="470" height="270" alt="Адаптивность на всех устройствах").responsive__image#phone
+                    img(src="app/images/laptop.png" width="470" height="270" alt="Адаптивность на всех устройствах").responsive__image#full-hd
 
                 .responsive__wrap
                     h3.responsive__subtitle.subtitle Типы экранов
                     ul.responsive__list
                         li.responsive__item
-                            a.responsive__link.responsive__link--active(href="#" id="desktop") Десктоп
+                            a.responsive__link.responsive__link(href="#desktop") Десктоп
                         li.responsive__item.responsive__item--laptop
-                            a.responsive__link(href="#" id="notebook") Ноутбук
+                            a.responsive__link.active(href="#notebook") Ноутбук
                         li.responsive__item
-                            a.responsive__link(href="#" id="tablet") Планшет
+                            a.responsive__link(href="#tablet") Планшет
                         li.responsive__item
-                            a.responsive__link(href="#" id="phone") Телефон
+                            a.responsive__link(href="#phone") Телефон
                         li.responsive__item.responsive__item--fullhd
-                            a.responsive__link(href="#" id="full-hd") FullHD
+                            a.responsive__link(href="#full-hd") FullHD
 
-            section.about-us
+            section.about-us#about-us
                 .about-us__wrap
                     h2.about-us__title.title Коротко о нас
                     ul.about-us__list
@@ -233,7 +255,7 @@ block content
                     h3.about-us__subtitle.about-us__subtitle--second.subtitle Сотрудничаем и проводим<br> семинары с 1С-Битрикс
                     img(src="app/images/group-bitrix.png" width="407.9" height="81" alt="Сертификаты Bitrix").about-us__img
 
-            section.clients
+            section.clients#clients
                 h2.clients__title.title Мы очень любим наших клиентов
                 p.clients__text От малого бизнеса до крупных застройщиков
 
@@ -306,15 +328,15 @@ block content
                         fieldset.form__contact-form.contact-form
                             legend.contact-form__subtitle.subtitle Контактные данные
                             label.contact-form__label(for="")
-                                input.contact-form__input(type="text" placeholder="ФИО")
+                                input.contact-form__input(type="text" placeholder="ФИО" data-required)
                             label.contact-form__label(for="")
-                                input.contact-form__input(type="email" placeholder="E-mail")
+                                input.contact-form__input(type="email" placeholder="E-mail" data-type="email" data-required)
                             label.contact-form__label(for="")
-                                input.contact-form__input(type="tel" placeholder="Телефон")
+                                input.contact-form__input.contact-form__input--tel(type="tel" placeholder="Телефон" data-type="tel" data-required pattern="^[ 0-9]+$")
 
                             button(type="button").contact-form__select Сфера бизнеса
 
-                            .contact-form__wrap.visually-hidden
+                            .contact-form__wrap
                                 ul.contact-form__list.select-list
                                     li.select-list__item Продажа
                                     li.select-list__item Продажа
@@ -352,7 +374,7 @@ block content
                             p.form-price__proviso Скидка действует при заполнении брифа
 
                     .form__wrap
-                        button.form__button.button(type="submit") Получить бриф
+                        button.form__button.button.popup-app-btn(type="submit") Получить бриф
                         p.form__proviso-conf Заполняя форму, вы соглашаетесь с политикой конфиденциальности
 
         section.process
@@ -361,7 +383,8 @@ block content
                 p.process__text Весь путь от начала работ до их завершения
                 ul.process__list.process-list
                     li.process-list__item
-                        span.process-list__number 1
+                        .process-list__number-wrap
+                            span.process-list__number 1
                         svg.process-list__svg(width="176" height="9" viewBox="0 0 176 9" fill="none" xmlns="http://www.w3.org/2000/svg")
                             <path d="M175.354 4.9473C175.549 4.75204 175.549 4.43546 175.354 4.2402L172.172 1.05822C171.976 0.862954 171.66 0.862954 171.464 1.05822C171.269 1.25348 171.269 1.57006 171.464 1.76532L174.293 4.59375L171.464 7.42218C171.269 7.61744 171.269 7.93402 171.464 8.12928C171.66 8.32455 171.976 8.32455 172.172 8.12928L175.354 4.9473ZM0 5.09375H175V4.09375H0V5.09375Z" fill="#2550DA"/>
 
@@ -370,7 +393,8 @@ block content
                             p.process-list__text Первым этапом является анализ конкурентов и ниши
 
                     li.process-list__item
-                        span.process-list__number 2
+                        .process-list__number-wrap
+                            span.process-list__number 2
                         svg.process-list__svg(width="176" height="9" viewBox="0 0 219 9" fill="none" xmlns="http://www.w3.org/2000/svg")
                             <path d="M218.354 4.9473C218.549 4.75204 218.549 4.43546 218.354 4.2402L215.172 1.05822C214.976 0.862954 214.66 0.862954 214.464 1.05822C214.269 1.25348 214.269 1.57006 214.464 1.76532L217.293 4.59375L214.464 7.42218C214.269 7.61744 214.269 7.93402 214.464 8.12928C214.66 8.32455 214.976 8.32455 215.172 8.12928L218.354 4.9473ZM0 5.09375H218V4.09375H0V5.09375Z" fill="#2550DA"/>
 
@@ -379,7 +403,8 @@ block content
                             p.process-list__text Создание доски идей, где мысли и идеи уже структурированы
 
                     li.process-list__item
-                        span.process-list__number 3
+                        .process-list__number-wrap
+                            span.process-list__number 3
                         svg.process-list__svg(width="176" height="9" viewBox="0 0 195 9" fill="none" xmlns="http://www.w3.org/2000/svg")
                             <path d="M194.354 4.9473C194.549 4.75204 194.549 4.43546 194.354 4.2402L191.172 1.05822C190.976 0.862954 190.66 0.862954 190.464 1.05822C190.269 1.25348 190.269 1.57006 190.464 1.76532L193.293 4.59375L190.464 7.42218C190.269 7.61744 190.269 7.93402 190.464 8.12928C190.66 8.32455 190.976 8.32455 191.172 8.12928L194.354 4.9473ZM0 5.09375H194V4.09375H0V5.09375Z" fill="#2550DA"/>
 
@@ -388,7 +413,8 @@ block content
                             p.process-list__text Визуализация идей и концептов, собранных ранее
 
                     li.process-list__item
-                        span.process-list__number 4
+                        .process-list__number-wrap
+                            span.process-list__number 4
 
                         .process-list__wrap
                             h4.process-list__subtitle Дизайн
@@ -398,7 +424,7 @@ block content
             .results__container.container
                 .results__wrap
                     h2.results__title.title Итоги сотрудничества с нами
-                    button.results__button.button(type="button") Получить консультацию
+                    button.results__button.button.popup-contact-us(type="button") Получить консультацию
 
                 ul.results__list.results-list
                     li.results-list__item
@@ -432,12 +458,12 @@ block content
                             span.include__price 220 550
                             |руб.
 
-                form.order__form.order-form(action="#" method="post")
+                form.order__form.order-form.form(action="#" method="post")
                     label.order-form__label.order-form__label--tel
-                        input.order-form__input(type="tel" name="tel" placeholder="Телефон")
+                        input.order-form__input.contact-form__input(type="tel" data-type="tel" name="tel" placeholder="Телефон" data-required pattern="^[ 0-9]+$")
                     label.order-form__label.order-form__label--email
-                        input.order-form__input(type="email" name="email" placeholder="E-mail")
+                        input.order-form__input.contact-form__input(type="email" data-type="email" name="email" placeholder="E-mail" data-required)
 
-                    button.order-form__button.button(type="submit") Заказать
+                    button.order-form__button.button.popup-app-btn(type="submit") Заказать
                 
                 p.order-form__proviso Заполняя форму, вы соглашаетесь с политикой конфиденциальности

@@ -59,6 +59,7 @@ fieldset {
 }
 
 .form-filter__label {
+    position: relative;
     display: flex;
     white-space: nowrap;
 
@@ -139,6 +140,14 @@ fieldset {
     &::placeholder {
         color: rgba(228, 233, 250, 0.75);
     }
+
+    &.error {
+        border-color: firebrick;
+    }
+
+    &.success {
+        border-color: green;
+    }
 }
 
 .contact-form__label:not(:first-of-type) {
@@ -147,13 +156,6 @@ fieldset {
     @media screen and (max-width: 1024px) {
         margin-top: 20px;
     }
-}
-
-.contacts-form__wrap {
-    position: absolute;
-    width: inherit;
-    background-color: rgba(228, 233, 250, 0.9);
-    color: #3B3D52;
 }
 
 .contact-form__select {
@@ -171,6 +173,8 @@ fieldset {
     padding-bottom: 10px;
     margin: 0;
     margin-top: 40px;
+    cursor: pointer;
+    outline: none;
 
     @media screen and (max-width: 1024px) {
         font-size: 16px;
@@ -194,6 +198,26 @@ fieldset {
         bottom: 10px;
         right: 15px;
     }
+
+    &.active::after {
+        transform: rotate(180deg);
+        transition: all 0.2s ease 0s;
+    }
+}
+
+.contact-form__wrap {
+    display: none;
+    position: absolute;
+    width: inherit;
+    background-color: rgba(228, 233, 250, 0.9);
+    color: #3B3D52;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 5;
+
+    &.active {
+        display: block;
+    }
 }
 
 .select-list {
@@ -204,7 +228,8 @@ fieldset {
 
     .select-list__item {
         padding-bottom: 5px;
-        border-bottom: 1px solid #3B3D52;
+        font-weight: 600;
+        color: #000000;
     
         &:not(:last-of-type) {
             margin-bottom: 15px;
@@ -250,14 +275,14 @@ fieldset {
         border-bottom: 1px solid rgba(228, 233, 250, 0.5);
         box-sizing: border-box;
     }
+}
 
-    .form-price__proviso {
-        font-size: 14px;
-        line-height: 17px;
-        opacity: 0.5;
-        padding: 0;
-        margin: 0;
-    }
+.form-price__proviso {
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.5;
+    padding: 0;
+    margin: 0;
 }
 
 .sale-wrap {

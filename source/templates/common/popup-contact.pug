@@ -1,0 +1,17 @@
+.popup-contact.popup
+    .popup-fade
+        section.popup__wrap.popup-contact.form
+            h2.popup-contact__subtitle.subtitle Связаться с нами
+            p.popup-contact__text.form__proviso-conf Заполните форму, и мы свяжемся с вами в ближайшее время.
+
+            form(action="#" method="post").popup-contact__form.form
+                label.contact-form__label Имя
+                    input(type="text" placeholder="Артур" data-required).contact-form__input
+                label.contact-form__label Телефон
+                    input(type="tel" data-type="tel" placeholder="+7 (905) 543-72-15" data-required pattern="^[0-9]+$").contact-form__input.contact-form__input--tel
+
+                p.popup-contact__proviso.form-price__proviso Отправляя форму, Вы соглашаетесь на обработку персональных данных
+
+                button(type="submit").popup-contact__button.form__button.button.popup-app-btn Отправить заявку
+
+            button(type="button").popup-contact__close-btn.popup-close

@@ -16,11 +16,15 @@ const paths = {
   templates: {
     pages: 'source/templates/pages/*.pug',
     src: 'source/templates/**/*.pug',
-    dest: 'build/assets/'
+    dest: 'build/'
   },
   styles: {
     src: 'source/styles/**/*.*',
     dest: 'build/app/styles/'
+  },
+  scripts: {
+    src: 'source/scripts/**/*.*',
+    dest: 'build/app/scripts/'
   },
   images: {
     src: 'source/images/**/*.*',
@@ -52,6 +56,14 @@ function styles() {
     .pipe(gulp.dest(paths.styles.dest))
 }
 
+
+//scripts
+
+function scripts() {
+  return gulp.src(paths.scripts.src)
+    .pipe(gulp.dest(paths.scripts.dest));
+}
+
 //images
 
 function images() {
@@ -76,6 +88,7 @@ function watch() {
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.templates.src, templates);
   gulp.watch(paths.images.src, images);
+  gulp.watch(paths.scripts.src, scripts)
 }
 
 // Server build
@@ -91,15 +104,16 @@ exports.templates = templates;
 exports.server = server;
 exports.styles = styles;
 exports.clean = clean;
+exports.scripts = scripts;
 exports.images = images;
 exports.fonts = fonts;
 
 gulp.task('default', gulp.series(
-  gulp.parallel(styles, templates, images, fonts),
+  gulp.parallel(styles, templates, images, scripts, fonts),
   gulp.parallel(watch, server)
 ));
 
 gulp.task('build', gulp.parallel(
   clean,
-  gulp.parallel(styles, templates, images, fonts)
+  gulp.parallel(styles, templates, images, scripts, fonts)
 ));

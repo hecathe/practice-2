@@ -19,6 +19,10 @@ img {
     max-width: 100%;
 }
 
+input {
+    outline: none;
+}
+
 .container {
     max-width: 1243px;
     margin: 0 auto;
@@ -48,6 +52,7 @@ img {
     border-radius: 5px;
     background: none;
     cursor: pointer;
+    outline: none;
 }
 
 .title {
@@ -57,7 +62,7 @@ img {
     padding: 0;
     margin: 0;
 
-    @media screen and (max-width: 10124px) {
+    @media screen and (max-width: 767px) {
         font-size: 24px;
         line-height: 29px;
     }
@@ -70,7 +75,7 @@ img {
     padding: 0;
     margin: 0;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 767px) {
         font-size: 20px;
         line-height: 25px;
     }
