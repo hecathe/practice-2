@@ -86,123 +86,208 @@
     @media screen and (max-width: 1024px) {
         justify-content: center;
     }
-}
 
-.include__list--set .include__item {
-    width: 14%;
-    padding-top: 70px;
-    margin-bottom: 40px;
-
-    @media screen and (max-width: 1024px) {
-        width: 25%;
+    .include__item {
+        width: 14%;
+        padding-top: 70px;
+        padding-right: 2px;
+        padding-left: 2px;
+        margin-bottom: 40px;
+    
+        @media screen and (max-width: 1024px) {
+            width: 25%;
+        }
+    
+        @media screen and (max-width: 700px) {
+            width: 50%;
+        }
     }
 
-    @media screen and (max-width: 700px) {
-        width: 50%;
-    }
-}
-
-.include__item--design::before {
-    content: "";
-    position: absolute;
-    width: 33px;
-    height: 49px;
-    background-image: url("../images/icon-figma.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 45%;
-}
-
-.include__item--responsive::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 45.2px;
-    background-image: url("../images/icon-devices.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 40%;
-}
-
-.include__item--animation::before {
-    content: "";
-    position: absolute;
-    width: 51px;
-    height: 51px;
-    background-image: url("../images/icon-ae.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 38%;
-}
-
-.include__item--uikit::before {
-    content: "";
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    background-image: url("../images/icon-ui.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 35%;
-
-    @media screen and (max-width: 1024px) {
-        left: 40%;
+    .include__text {
+        @media screen and (max-width: 320px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 }
 
-.include__item--supervision::before {
-    content: "";
-    position: absolute;
-    width: 61px;
-    height: 53px;
-    background-image: url("../images/icon-superviser.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 40%;
+.include__item--design {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 33px;
+        height: 49px;
+        background-image: url("../images/icon-figma.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 41%;
+    }
+}
+
+.include__item--responsive {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 45.2px;
+        background-image: url("../images/icon-devices.svg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 32%;
+
+        @media screen and (max-width: 1024px) {
+            left: 37%;
+        }
+
+        @media screen and (max-width: 768px) {
+            left: 34%;
+        }
+
+        @media screen and (max-width: 320px) {
+            left: 31%;
+        }
+    }
+}
+
+.include__item--animation {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 51px;
+        height: 51px;
+        background-image: url("../images/icon-ae.svg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 34%;
+
+        @media screen and (max-width: 1024px) {
+            left: 38%;
+        }
+
+        @media screen and (max-width: 768px) {
+            left: 35%;
+        }
+
+        @media screen and (max-width: 320px) {
+            left: 31%;
+        }
+    }
+}
+
+.include__item--uikit {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        background-image: url("../images/icon-ui.svg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 35%;
+    
+        @media screen and (max-width: 1024px) {
+            left: 40%;
+        }
+
+        @media screen and (max-width: 768px) {
+            left: 35%;
+        }
+
+        @media screen and (max-width: 425px) {
+            left: 38%;
+        }
+
+        @media screen and (max-width: 320px) {
+            left: 34%;
+        }
+    }
 }
 
 .include__item--supervision {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 61px;
+        height: 53px;
+        background-image: url("../images/icon-superviser.svg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 34%;
+
+        @media screen and (max-width: 1024px) {
+            left: 39%;
+        }
+
+        @media screen and (max-width: 768px) {
+            left: 37%;
+        }
+    }
+
     @media screen and (max-width: 1024px) {
         order: 2;
     }
-}
 
-.include__item--presentation::before {
-    content: "";
-    position: absolute;
-    width: 39px;
-    height: 54px;
-    background-image: url("../images/icon-presentation.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 43%;
-}
-
-.include__item--supervision {
     @media screen and (max-width: 1024px) {
         order: 1;
     }
 }
 
-.include__item--guides::before {
-    content: "";
-    position: absolute;
-    width: 36px;
-    height: 54px;
-    background-image: url("../images/icon-html.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 43%;
+.include__item--presentation {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 39px;
+        height: 54px;
+        background-image: url("../images/icon-presentation.svg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 37%;
+
+        @media screen and (max-width: 1024px) {
+            left: 40%;
+        }
+
+        @media screen and (max-width: 320px) {
+            left: 36%;
+        }
+    }
 }
 
 .include__item--guides {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 36px;
+        height: 54px;
+        background-image: url("../images/icon-html.svg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 39%;
+
+        @media screen and (max-width: 1024px) {
+            left: 41%;
+        }
+
+        @media screen and (max-width: 768px) {
+            left: 39%;
+        }
+
+        @media screen and (max-width: 425px) {
+            left: 41%;
+        }
+
+        @media screen and (max-width: 320px) {
+            left: 38%;
+        }
+    }
+
     @media screen and (max-width: 1024px) {
         order: 5;
     }
@@ -267,6 +352,11 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
+
+    @media screen and (max-width: 320px) {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 .include__currency--grey {
@@ -280,12 +370,22 @@
     padding: 0;
     margin: 0;
     margin-right: 5px;
+
+    @media screen and (max-width: 320px) {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 .include__price--old {
     font-size: 24px;
     line-height: 29px;
     text-decoration: line-through;
+
+    @media screen and (max-width: 320px) {
+        font-size: 20px;
+        line-height: 25px;
+    }
 }
 
 .include__box--order {

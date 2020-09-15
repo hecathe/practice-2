@@ -38,6 +38,11 @@
     &:last-of-type {
         @media screen and (max-width: 1024px) {
             display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width: 768px) {
+            column-gap: 53px;
         }
     }
 }
@@ -67,8 +72,8 @@
 }
 
 .about-us__subtitle--second {
-    @media screen and (max-width: 1024px) {
-        margin-right: 53px;
+    @media screen and (max-width: 768px) {
+        width: 321px;
     }
 }
 

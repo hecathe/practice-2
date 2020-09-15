@@ -36,9 +36,7 @@ fieldset {
 .form-filter {
     display: flex;
     flex-direction: column;
-    padding-bottom: 26px;
     margin-bottom: 60px;
-    border-bottom: 1px solid rgba(228, 233, 250, 0.5);
 
     @media screen and (max-width: 700px) {
         padding-bottom: 20px;
@@ -48,6 +46,15 @@ fieldset {
 
 .form-filter__wrap {
     display: flex;
+    border-bottom: 1px solid rgba(228, 233, 250, 0.5);
+    padding: 0 20px;
+    padding-bottom: 20px;
+    margin: 0 -20px;
+
+    &::after {
+        content: "";
+        padding-right: 20px;
+    }
 
     @media screen and (max-width: 767px) {
         overflow-x: scroll;
@@ -257,6 +264,10 @@ fieldset {
         order: 1;
     }
 
+    @media screen and (max-width: 320px) {
+        width: 280px;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -267,6 +278,10 @@ fieldset {
         background-repeat: no-repeat;
         top: -20px;
         left: 39%;
+
+        @media screen and (max-width: 320px) {
+            left: 37%;
+        }
     }
 
     .form-price__fieldset {

@@ -65,7 +65,7 @@ document.querySelectorAll('[data-type="tel"]').forEach(item => {
       }
     }
     if (temp == false) {
-      console.warn('Форма заполнена не корректно')
+      console.warn('Форма заполнена некорректно')
       return false;
     } else {
       console.log('Форма отправлена')

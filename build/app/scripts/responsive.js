@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(event){
     var list = document.querySelectorAll('.responsive__list .responsive__link');
     list = Array.prototype.slice.call(list, 0); // convert nodeList to Array
     list.forEach(function(el, i, ar) {
-        el.addEventListener('click', function(evt){
+        el.addEventListener('click', function(event){
             event.preventDefault();
             var tab = document.querySelector(el.getAttribute('href'));
 
