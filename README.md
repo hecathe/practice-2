@@ -1,2 +1,1 @@
-# practice-2
-Practice
+# https://hecathe.github.io/practice-2/
