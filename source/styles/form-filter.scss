@@ -98,6 +98,7 @@ fieldset {
 }
 
 .contact-form {
+    position: relative;
     width: 494px;
     display: flex;
     flex-direction: column;
@@ -215,6 +216,7 @@ fieldset {
 .contact-form__wrap {
     display: none;
     position: absolute;
+    top: 67%;
     width: inherit;
     background-color: rgba(228, 233, 250, 0.9);
     color: #3B3D52;

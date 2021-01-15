@@ -115,34 +115,3 @@ document.querySelectorAll('[data-type="tel"]').forEach(item => {
       });
     }, 2000);
   }
-
-/*for (let formInput of formInputs) {
-    for (let form of forms) {
-        form.addEventListener('submit', function(event){
-            if (formInput.hasAttribute('data-required')) {
-                if (formInput.value != '') {
-                    //event.preventDefault();
-                    formInput.classList.add('success');
-                    popupContact.classList.remove('show');
-                    popupApp.classList.add('show');
-
-                    function selfClose() {
-                        popupApp.classList.remove('show');
-                    }
-                    setTimeout(selfClose, 2000);
-                    form.reset();
-                    formInput.classList.remove('success');
-                } else {
-                    
-                        event.preventDefault();
-                        formInput.classList.add('error');   
-                    }
-                
-            }
-        });
-    }
-}*/
-
-/*for (let i = 0; i < formInputs.length; i++) {
-    
-}*/
